@@ -22,7 +22,7 @@ public class InventoryController {
 
     //get specific inventory item
      @GetMapping("/{id}")
-    public Inventory getItemDetails(@PathVariable long id) {
+    public Optional<Inventory> getItemDetails(@PathVariable long id) {
         return inventoryRepository.findById(id); //findById??
          //TODO: NEED TO sort out what is an Optional and when do i need to use it. Like on the like above.
 
@@ -31,7 +31,7 @@ public class InventoryController {
      }
 
      @PostMapping
-     public Inventory createInventoryItem(Inventory item) {
+     public Inventory createInventoryItem(@RequestBody Inventory item) {
         return inventoryRepository.save(item);
      }
 

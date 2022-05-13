@@ -2,7 +2,6 @@ package com.avrmusic.avrmusicbackend.entity;
 
 import javax.persistence.*;
 
-
 @Entity
 public class Inventory {
     
