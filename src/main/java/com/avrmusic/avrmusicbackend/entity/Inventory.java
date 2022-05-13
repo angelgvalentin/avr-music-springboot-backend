@@ -3,6 +3,7 @@ package com.avrmusic.avrmusicbackend.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "inventory")
 public class Inventory {
     
     @Id
