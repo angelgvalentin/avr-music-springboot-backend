@@ -48,6 +48,8 @@ public class InventoryService {
         itemToUpdate.setImage(item.getImage());
         itemToUpdate.setPrice(item.getPrice());
         itemToUpdate.setVideo(item.getVideo());
+        itemToUpdate.setStock(item.getStock());
+
         return inventoryRepository.save(itemToUpdate);
     }
 

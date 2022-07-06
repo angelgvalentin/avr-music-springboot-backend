@@ -19,6 +19,9 @@ public class Inventory {
     private String description;
     private String image;
     private String video;
+    private int stock;
+
+
 
     public Inventory () {}
 
@@ -76,5 +79,13 @@ public class Inventory {
 
     public void setVideo(String video) {
         this.video = video;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 }
