@@ -15,11 +15,20 @@ public class Inventory {
     private String category;
     private String name;
     private int price;
+    @Column(columnDefinition = "TEXT")
     private String description;
     private String image;
     private String video;
 
-    public Inventory () {};
+    public Inventory () {}
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getCategory() {
         return category;
