@@ -17,6 +17,8 @@ public class Inventory {
     private int price;
     @Column(columnDefinition = "TEXT")
     private String description;
+    private String brand;
+    private String brandLogo;
     private String image;
     private String video;
     private int stock;
@@ -63,6 +65,22 @@ public class Inventory {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getBrandLogo() {
+        return brandLogo;
+    }
+
+    public void setBrandLogo(String brandLogo) {
+        this.brandLogo = brandLogo;
     }
 
     public String getImage() {

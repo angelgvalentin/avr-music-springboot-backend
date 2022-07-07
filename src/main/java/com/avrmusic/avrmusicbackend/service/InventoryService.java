@@ -46,6 +46,8 @@ public class InventoryService {
         itemToUpdate.setCategory(item.getCategory());
         itemToUpdate.setDescription(item.getDescription());
         itemToUpdate.setImage(item.getImage());
+        itemToUpdate.setBrand(item.getBrand());
+        itemToUpdate.setBrandLogo(item.getBrandLogo());
         itemToUpdate.setPrice(item.getPrice());
         itemToUpdate.setVideo(item.getVideo());
         itemToUpdate.setStock(item.getStock());
